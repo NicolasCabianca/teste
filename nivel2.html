@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--REFERENCIA A BIBLIOTECA DO P5.JS -->
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+    <!--REFERENCIA A BIBLIOTECA DO FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+    <!--REFERENCIA AO SWEET ALERT.JS -->
+    <script src="sweetalert.min.js"></script>
+    <link href="sweetalert.css" rel="stylesheet" />
+    <title>Nivel 2 </title>
+  </head>
+        <style>
+          body{
+            overflow: hidden;
+          }
+        </style>
+
+  <body>
+    <script>
+      /*
+      //troque aqui o const pelo seu const
+      const firebaseConfig = {
+        apiKey: "AIzaSyAqBgERROVuW8iEIGxaRf13EG131wohutU",
+        authDomain: "bancodedadoprimeirojogo.firebaseapp.com",
+        databaseURL:
+          "https://bancodedadoprimeirojogo-default-rtdb.firebaseio.com",
+        projectId: "bancodedadoprimeirojogo",
+        storageBucket: "bancodedadoprimeirojogo.appspot.com",
+        messagingSenderId: "408620840283",
+        appId: "1:408620840283:web:f1b11622457448b98c567e",
+      };
+      */
+      
+      const firebaseConfig = {
+  apiKey: "AIzaSyD-GxWJxYciaM8XdrEgSubEaK_qNe8Z2bk",
+  authDomain: "banco-de-dados-database.firebaseapp.com",
+  databaseURL: "https://banco-de-dados-database-default-rtdb.firebaseio.com",
+  projectId: "banco-de-dados-database",
+  storageBucket: "banco-de-dados-database.appspot.com",
+  messagingSenderId: "97828710716",
+  appId: "1:97828710716:web:1604dcd1c7a51046d45639",
+  measurementId: "G-FDGY8V42QV"
+};
+    
+      firebase.initializeApp(firebaseConfig);
+      var database = firebase.database();
+    </script>
+    <script src="./niveis/nivel2/inimigo.js"></script>
+    <script src="./niveis/nivel2/player.js"></script>
+    <script src="./niveis/nivel2/game.js"></script>
+
+    <script src="./niveis/nivel2/sketch.js"></script>
+  </body>
+</html>

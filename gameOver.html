@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--REFERENCIA A BIBLIOTECA DO P5.JS -->
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <!--REFERENCIA A BIBLIOTECA DO FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+    <!--REFERENCIA AO SWEET ALERT.JS -->
+    <script src="sweetalert.min.js"></script>
+    <link href="sweetalert.css" rel="stylesheet">
+    <title>YOU LOSE 😭 </title>
+</head>
+    <style>
+        
+        body{
+            overflow: hidden;
+            background-image: linear-gradient(black, #250E05, #6C2C09);
+        }
+        button{
+            background-color: blue;
+            padding:20px;
+            border-radius: 30px;
+        }
+    </style>
+<body id="fundo">
+    
+    <center>
+        
+        <img src="Img/Over.webp" width="40%" >
+        <br>
+        <button onclick="trocarNivel()">Comecar De Novo??</button>
+    </center>
+    
+    <script src="./outros/gameOver.js"></script>
+
+</body>
+
+</html>
+
